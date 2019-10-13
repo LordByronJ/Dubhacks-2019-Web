@@ -55,6 +55,10 @@ header, footer {
 	min-height: 50vh;
 }
 
+#upload-box:hover {
+	cursor:pointer;
+}
+
 .doc-image img {
 	width: 400px;
 	height: 400px;
