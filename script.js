@@ -14,9 +14,6 @@ uploadBox.addEventListener('click', function() {
 
 realFile.addEventListener('change', function() {
 	if (realFile.value) {
-		let div = document.createElement('div');
-		div.innerHTML = 'new div';
-		uploadBox.appendChild(div);
 
 		const imageName = realFile.value.substr(realFile.value.lastIndexOf('\\') + 1);
 
@@ -44,5 +41,9 @@ function addToFirestore(imageName, url) {
 }
 
 function createDiv(imageName, url) {
-	// TODO: Roy: create visual divs
+	var img = document.createElement('img');
+	img.setAttribute('src', url);
+	img.setAttribute('alt', 'image');
+	uploadBox.appendChild(img);
+
 }
