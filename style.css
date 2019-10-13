@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+html {
+	background-color: rgb(60, 60, 60);
+}
+
 body {
 	font-family: "Open Sans", sans-serif;
 }
@@ -39,6 +43,25 @@ header, footer {
 #doc-grid .doc {
 	padding: 20px;
 	background: red;
+}
+
+#upload-button {
+	background-color: rgb(87, 137, 242);
+	font-size: 20px;
+	color: rgb(222, 222, 222);
+	border: none;
+	padding: 10px 30px;
+	border-radius: 20px;
+	display: flex;
+}
+
+#upload-box {
+	background-color: rgba(255,255,255,0.50);
+  padding: 2% 5%;
+  margin: 5% 10%;
+  box-shadow: 0 0 25px 10px rgba(0,0,0,0.25);
+  border-radius: 30px;
+	min-height: 50vh;
 }
 
 .doc-image img {
