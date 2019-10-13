@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Quicksand", serif;
+}
+
+header, footer {
+	border: 2px solid olive;
+}
+
+#container {
+	border: 2px solid orange;
+}
+
+#doc-grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#doc-grid .doc {
+	padding: 20px;
+	background: red;
+}
+
+.doc-image img {
+	width: 400px;
+	height: 400px;
+}
