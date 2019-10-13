@@ -9,6 +9,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Quicksand", serif;
+	padding: 15px;
+}
+
+p {
+	margin: 10px;
+}
+
+ul {
+	margin: 30px;
 }
 
 header, footer {
@@ -35,4 +44,8 @@ header, footer {
 .doc-image img {
 	width: 400px;
 	height: 400px;
+}
+
+.page-links {
+	margin: 10px;
 }
