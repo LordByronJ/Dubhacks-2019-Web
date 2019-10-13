@@ -1,5 +1,6 @@
 // Add firebase config here
 
+
 firebase.initializeApp(firebaseConfig);
 
 const storageRef = firebase.storage().ref();
