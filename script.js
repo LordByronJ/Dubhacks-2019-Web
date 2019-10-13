@@ -41,9 +41,7 @@ function addToFirestore(imageName, url) {
 }
 
 function createDiv(imageName, url) {
-	var img = document.createElement('img');
-	img.setAttribute('src', url);
-	img.setAttribute('alt', 'image');
-	uploadBox.appendChild(img);
-
+	let div = document.createElement('div');
+	div.style.backgroundImage = 'url(' + url + ')';
+	uploadBox.appendChild(div);
 }

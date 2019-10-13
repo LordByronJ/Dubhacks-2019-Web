@@ -90,7 +90,7 @@ main {
 	background-position: center;
 
 }
-#upload-box img {
+#upload-box div {
 	height: 15vw;
 	width: 15vw;
 	background-color: rgba(250, 250, 250, 0.9);
