@@ -1,41 +1,22 @@
-const docGrid = document.getElementById('doc-grid');
+const uploadBox = document.getElementById("upload-box");
+const realFile = document.getElementById("real-file");
 
-populateDocGrid();
+uploadBox.addEventListener('click', function() {
+	realFile.click();
+});
 
-function populateDocGrid() {
-	let docs = [{
-		type: 'image',
-		filename: 'placeholder.png',
-		payload: 'https://via.placeholder.com/90x90',
-	},{
-		type: 'image',
-		filename: 'placeholder.png',
-		payload: 'https://via.placeholder.com/130x130',
-	},{
-		type: 'image',
-		filename: 'placeholder.png',
-		payload: 'https://via.placeholder.com/100x100',
-	},{
-		type: 'image',
-		filename: 'placeholder.png',
-		payload: 'https://via.placeholder.com/500x500',
-	},{
-		type: 'image',
-		filename: 'placeholder.png',
-		payload: 'https://via.placeholder.com/80x80',
-	}];
+realFile.addEventListener('change', function() {
 
-	for (let doc of docs) {
-		addDocumentToGrid(doc);
+		alert(realFile.value);
+	if(realFile.value) {
+		var file = document.getElementById('uploadBox');
+		var div = document.createElement('div');
+		div.innerHTML = 'new div';
+		file.appendChild('div');
 	}
-}
 
-function addDocumentToGrid(doc) {
-	if (doc.type === 'image') {
-		docGrid.innerHTML += `<div class='doc doc-image'><img src='${doc.payload}' alt='${doc.filename}'></img></div>`;
-	} else if (doc.type === 'text') {
-		docGrid.innerHTML += `<div class='doc doc-text'><p>${doc.payload}</p></div>`;
-	} else {
-		docGrid.innerHTML += `<div class='doc doc-${doc.type}'>${doc.payload}</div>`;
-	}
-}
+		// var div = document.createElement('div');
+		// div.style.background = 'green';
+		// div.style.text = 'hello';
+  	// uploadBox.appendChild(div);
+});
